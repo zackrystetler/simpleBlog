@@ -1,0 +1,269 @@
+/* Theme Name: simpleBlog
+  Author: Zackry Stetler
+  Author URI: http://zackrystetler.com/
+  Description: A theme created by Zackry Stetler
+  Version: 1.0
+  License: GNU General Public License v2 or later
+  License URI: http://www.gnu.org/licenses/gpl-2.0.html
+  Tags: Add Tags */
+@import url("https://fonts.googleapis.com/css?family=Merriweather:300,400,700|Montserrat:300,400,700");
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 16px;
+  background-color: #F8F8F8;
+}
+
+body {
+  color: #3D3B36;
+  font-family: "Merriweather", serif;
+  font-weight: thin;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 10px;
+}
+
+body img {
+  width: auto;
+  max-width: 100%;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+}
+
+h1, h2 {
+  font-family: "Montserrat", sans-serif;
+  color: #3D3B36;
+}
+
+h3 {
+  font-family: "Merriweather", serif;
+  font-weight: bold;
+}
+
+p {
+  margin: 1rem;
+  line-height: 1.4rem;
+}
+
+header {
+  background-color: #F8F8F8;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 60px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header .header--logo {
+  font-size: 2.5rem;
+  line-height: 0;
+  padding: 1rem;
+}
+
+header .header--menu-button {
+  font-size: 2rem;
+  line-height: 0;
+  padding: 1rem;
+}
+
+header + * {
+  margin-top: 60px;
+}
+
+header nav {
+  display: none;
+}
+
+header nav.active {
+  background-color: #69AA60;
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header nav.active .nav--close {
+  height: auto;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  font-size: 2rem;
+  font-weight: bold;
+  padding: 2rem;
+}
+
+header nav.active .nav--internal {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-weight: bold;
+  font-size: 2rem;
+  padding: 1rem;
+}
+
+header nav.active .nav--social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: auto;
+  margin-bottom: 1.5rem;
+  font-size: 1.5rem;
+  padding: 1rem;
+}
+
+section {
+  text-align: left;
+  margin-bottom: 2rem;
+}
+
+section h2 {
+  margin-right: 1rem;
+}
+
+section span {
+  color: #AEC1C2;
+  padding: 0.5rem;
+}
+
+article {
+  text-align: left;
+  margin-bottom: 2rem;
+  max-width: 800px;
+}
+
+article h3 {
+  padding: 0.5rem;
+  font-style: italic;
+  font-weight: lighter;
+  font-size: 1rem;
+}
+
+article figcaption {
+  font-style: italic;
+  font-weight: lighter;
+  font-size: 1rem;
+  padding: 0.5rem;
+}
+
+article span {
+  color: #AEC1C2;
+  padding: 0.5rem;
+}
+
+.post-nav {
+  width: 100%;
+  max-width: 800px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.post-nav p {
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+}
+
+.post-nav h2 {
+  color: #69AA60;
+}
+
+.post-nav span {
+  color: #AEC1C2;
+}
+
+.post-nav a:nth-child(2) {
+  text-align: right;
+}
+
+footer {
+  font-family: "Montserrat", sans-serif;
+  color: #69AA60;
+  font-size: 1.5rem;
+  font-weight: bold;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+footer a {
+  padding: 1rem;
+}

@@ -1,0 +1,52 @@
+
+@import url('https://fonts.googleapis.com/css?family=Merriweather:300,400,700|Montserrat:300,400,700')
+
+$primary-font: 'Montserrat', sans-serif;
+$secondary-font: 'Merriweather', serif
+$primary-colour: #69AA60
+$secondary-colour: #3D3B36
+$tertiary-colour: #AEC1C2
+$off-white: #F8F8F8
+$header-height: 60px
+
+%border
+    border: solid 1px red
+
+*
+    box-sizing: border-box
+    margin: 0
+    padding: 0
+html
+    font-size: 16px
+    background-color: $off-white
+
+body
+    color: $secondary-colour
+    font-family: $secondary-font
+    font-weight: thin
+    display: flex
+    flex-direction: column
+    align-items: center
+
+    margin: 0 10px
+    img
+        width: auto
+        max-width: 100%
+        align-self: center
+a
+    text-decoration: none
+    color: inherit
+
+ul
+    list-style: none
+h1, h2
+    font-family: $primary-font
+    color: $secondary-colour
+
+h3
+    font-family: $secondary-font
+    font-weight: bold
+
+p
+    margin: 1rem
+    line-height: 1.4rem
